@@ -1,0 +1,193 @@
+#VRML_SIM R2022a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.14335947697268175 -0.14492934967943663 0.9790012992655395 4.702077658369235
+  position -0.01739393824960911 1.8794361611528687 0.7429899132427088
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  rotation 0 1 0 0
+  floorSize 5 5
+}
+Robot {
+  children [
+    Group {
+      children [
+        DEF base_1 Solid {
+          translation 2.5558668224296446e-09 -3.8889485989748386e-13 0.19630273884387298
+          rotation 3.4250025540280605e-06 -0.9999999999941347 -8.244386631114573e-10 2.9612344447021705e-06
+          children [
+            HingeJoint {
+              jointParameters HingeJointParameters {
+                axis 0 0 1
+                minStop -6
+                maxStop 6
+              }
+              device [
+                RotationalMotor {
+                  name "axis_1_motor"
+                  maxTorque 30
+                }
+              ]
+              endPoint DEF axis_1 Solid {
+                translation -1.06822e-05 7.61131e-13 0.235
+                rotation 6.362793740740454e-07 -0.9999999999995953 6.362348341684757e-07 1.5708358654892243
+                children [
+                  SliderJoint {
+                    jointParameters JointParameters {
+                      position 0.000278263000857665
+                      minStop -0.23
+                      maxStop 0.23
+                    }
+                    device [
+                      LinearMotor {
+                        name "axis_2_motor"
+                      }
+                    ]
+                    endPoint DEF axis_2 Solid {
+                      translation 0 0 0.000278263000857665
+                      rotation 0 1 0 0
+                      children [
+                        HingeJoint {
+                          jointParameters HingeJointParameters {
+                            position 4.900656420468085e-10
+                            axis 0 0 1
+                          }
+                          device [
+                            RotationalMotor {
+                              name "axis_3_motor"
+                            }
+                          ]
+                          endPoint DEF axis_3 Solid {
+                            translation 0 0 0.30999999999999966
+                            rotation -3.724508357595596e-08 0.9999999999999986 3.724493536668427e-08 1.5708003061004239
+                            children [
+                              DEF axis_3 Group {
+                                children [
+                                  DEF upper Transform {
+                                    translation -0.05 0 -0.07
+                                    children [
+                                      DEF balck_box Shape {
+                                        appearance Appearance {
+                                          material Material {
+                                            diffuseColor 0 0 0
+                                          }
+                                        }
+                                        geometry Box {
+                                          size 0.08 0.05 0.01
+                                        }
+                                      }
+                                    ]
+                                  }
+                                  DEF lower Transform {
+                                    translation -0.05 0 0.07
+                                    children [
+                                      USE balck_box
+                                    ]
+                                  }
+                                  DEF base Shape {
+                                    appearance Appearance {
+                                      material Material {
+                                        diffuseColor 1 1 0
+                                      }
+                                    }
+                                    geometry Box {
+                                      size 0.02 0.07 0.15
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                            name "solid(4)"
+                            boundingObject USE axis_3
+                            physics Physics {
+                            }
+                          }
+                        }
+                        DEF axis_2 Shape {
+                          appearance Appearance {
+                            material Material {
+                              diffuseColor 1 0.333333 0
+                            }
+                          }
+                          geometry Cylinder {
+                            height 0.6
+                            radius 0.03
+                          }
+                        }
+                      ]
+                      name "solid(3)"
+                      boundingObject USE axis_2
+                      physics Physics {
+                      }
+                    }
+                  }
+                  DEF axis_1 Shape {
+                    appearance Appearance {
+                      material Material {
+                        diffuseColor 1 1 0
+                      }
+                    }
+                    geometry Cylinder {
+                      height 0.14
+                      radius 0.07
+                    }
+                  }
+                ]
+                name "solid(2)"
+                boundingObject USE axis_1
+                physics Physics {
+                }
+              }
+            }
+            DEF base_1 Shape {
+              appearance Appearance {
+                material Material {
+                  diffuseColor 1 1 0
+                }
+              }
+              geometry Cylinder {
+                height 0.4
+                radius 0.03
+              }
+            }
+          ]
+          name "solid(1)"
+          boundingObject USE base_1
+          physics Physics {
+            density 100000
+          }
+        }
+        DEF base_0 Solid {
+          translation 0 0 0.009793100016493748
+          rotation 0 1 0 0
+          children [
+            DEF base_0 Shape {
+              appearance DEF yellow Appearance {
+                material Material {
+                  diffuseColor 1 1 0
+                }
+              }
+              geometry Cylinder {
+                height 0.02
+                radius 0.1
+              }
+            }
+          ]
+          boundingObject USE base_0
+          physics Physics {
+            density 10000
+          }
+        }
+      ]
+    }
+  ]
+  controller "my_controller"
+  controllerArgs [
+    "0.45 0 0"
+  ]
+}
