@@ -1,0 +1,1194 @@
+#VRML_SIM R2022a utf8
+WorldInfo {
+  basicTimeStep 20
+}
+Viewpoint {
+  orientation -0.4182910663604698 -0.3681990069512452 0.8303385304098191 4.403931418222287
+  position 5.413707767725113 13.063027357873983 15.476083162054849
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  rotation 0 1 0 0
+  floorSize 20 20
+}
+E-puck {
+  translation 0.0453313 4.74095 1.00197e-13
+  rotation 0 0 1 -1.5707953071795862
+  controller "maze_runner"
+  battery [
+    0
+  ]
+}
+DEF Walls Group {
+  children [
+    Solid {
+      translation -0.0201622 0.387888 0.5
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 3 0.2 1
+          }
+        }
+      ]
+      name "solid(24)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation -4.12038 4.83831 0.5
+      children [
+        DEF wall_01 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 8 0.2 1
+          }
+        }
+      ]
+      name "solid(8)"
+      boundingObject USE wall_01
+    }
+    Solid {
+      translation 4.89962 4.83831 0.5
+      children [
+        DEF wall_01 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 8 0.2 1
+          }
+        }
+      ]
+      name "solid(13)"
+      boundingObject USE wall_01
+    }
+    Solid {
+      translation 4.98147 -7.34623 0.5
+      children [
+        DEF wall_01 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 8 0.2 1
+          }
+        }
+      ]
+      name "solid(12)"
+      boundingObject USE wall_01
+    }
+    Solid {
+      translation -7.9778 -1.27044 0.5
+      rotation 0 0 1 1.5708
+      children [
+        DEF wall_02 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 12 0.2 1
+          }
+        }
+      ]
+      name "solid(10)"
+      boundingObject USE wall_02
+    }
+    Solid {
+      translation 8.81902 -1.29327 0.5
+      rotation 0 0 1 1.5708
+      children [
+        DEF wall_02 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 12 0.2 1
+          }
+        }
+      ]
+      name "solid(11)"
+      boundingObject USE wall_02
+    }
+    Solid {
+      translation 7.88017 -1.30303 0.5
+      rotation 0 0 1 1.5708
+      children [
+        DEF wall_02 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 10.5 0.2 1
+          }
+        }
+      ]
+      name "solid(36)"
+      boundingObject USE wall_02
+    }
+    Solid {
+      translation -4.10142 -7.28838 0.5
+      children [
+        DEF Wall_00 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 8 0.2 1
+          }
+        }
+      ]
+      name "solid(6)"
+      boundingObject USE wall_01
+    }
+    Solid {
+      translation -4.6165 2.25118 0.5
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF wall_04 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 5 0.2 1
+          }
+        }
+      ]
+      name "solid(1)"
+      boundingObject USE wall_04
+    }
+    Solid {
+      translation 6.04601 2.76456 0.5
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF wall_04 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 4.2 0.2 1
+          }
+        }
+      ]
+      name "solid(42)"
+      boundingObject USE wall_04
+    }
+    Solid {
+      translation 5.28698 1.82598 0.5
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF wall_04 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 4.2 0.2 1
+          }
+        }
+      ]
+      name "solid(41)"
+      boundingObject USE wall_04
+    }
+    Solid {
+      translation 6.81258 2.23383 0.5
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF wall_04 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 5 0.2 1
+          }
+        }
+      ]
+      name "solid(40)"
+      boundingObject USE wall_04
+    }
+    Solid {
+      translation -6.6383 2.897 0.5
+      rotation 0 0 1 4.692820414042842e-06
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 2.5 0.2 1
+          }
+        }
+      ]
+      name "solid(2)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation -5.89547 3.94736 0.5
+      rotation 0 0 1 4.692820414042842e-06
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 2.5 0.2 1
+          }
+        }
+      ]
+      name "solid(5)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation 1.84631 -0.267328 0.5
+      rotation 0 0 1 4.692820414042842e-06
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 1.7 0.2 1
+          }
+        }
+      ]
+      name "solid(4)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation -4.33105 -5.63493 0.47
+      rotation 0 0 1 4.692820414042842e-06
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 1.7 0.2 1
+          }
+        }
+      ]
+      name "solid(48)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation -0.649753 1.78459 0.5
+      rotation 0 0 1 4.6928e-06
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 1.2 0.2 1
+          }
+        }
+      ]
+      name "solid(25)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation 6.02984 -0.162955 0.5
+      rotation 0 0 1 1.01503e-06
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 1.5 0.2 1
+          }
+        }
+      ]
+      name "solid(30)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation 4.44843 -3.4003 0.5
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 1 0.2 1
+          }
+        }
+      ]
+      name "solid(39)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation -5.27246 -5.25057 0.47
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 1 0.2 1
+          }
+        }
+      ]
+      name "solid(51)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation -0.222647 -6.85838 0.5
+      rotation 0 0 1 1.5708
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 1 0.2 1
+          }
+        }
+      ]
+      name "solid(47)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation -4.44932 -1.67082 0.5
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 1.1 0.2 1
+          }
+        }
+      ]
+      name "solid(34)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation 6.16312 -1.90799 0.5
+      rotation 0 0 -1 -5.307179586466759e-06
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 1.7 0.2 1
+          }
+        }
+      ]
+      name "solid(22)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation 7.01617 -4.62299 0.5
+      rotation 0 0 -1 -5.307179586466759e-06
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 1.7 0.2 1
+          }
+        }
+      ]
+      name "solid(62)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation 3.95891 -4.61778 0.5
+      rotation 0 0 1 4.692820414042842e-06
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 3.2 0.2 1
+          }
+        }
+      ]
+      name "solid(59)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation 6.46628 -0.922405 0.5
+      rotation 0 0 1 4.692820414042842e-06
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 2.7 0.2 1
+          }
+        }
+      ]
+      name "solid(58)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation 5.75263 -3.79801 0.5
+      rotation 0 0 1 4.692820414042842e-06
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 2.7 0.2 1
+          }
+        }
+      ]
+      name "solid(60)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation 0.0268798 -5.60724 0.5
+      rotation 0 0 1 4.692820414042842e-06
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 2.5 0.2 1
+          }
+        }
+      ]
+      name "solid(38)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation -4.0879 -4.67606 0.47
+      rotation 0 0 1 4.692820414042842e-06
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 2.5 0.2 1
+          }
+        }
+      ]
+      name "solid(53)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation 2.21793 -1.24862 0.47
+      rotation 0 0 1 4.692820414042842e-06
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 2.5 0.2 1
+          }
+        }
+      ]
+      name "solid(44)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation -5.8814 1.86761 0.47
+      rotation 0 0 1 4.692820414042842e-06
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 2.5 0.2 1
+          }
+        }
+      ]
+      name "solid(20)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation -6.64193 0.952759 0.5
+      rotation 0 0 1 4.692820414042842e-06
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 2.5 0.2 1
+          }
+        }
+      ]
+      name "solid(7)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation -3.5336 1.8372 0.47
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 4 0.2 1
+          }
+        }
+      ]
+      name "solid(9)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation -2.43735 0.916722 0.5
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 4 0.2 1
+          }
+        }
+      ]
+      name "solid(16)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation 1.08503 1.31008 0.5
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 3.3 0.2 1
+          }
+        }
+      ]
+      name "solid(37)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation -6.14033 -5.50318 0.47
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 2 0.2 1
+          }
+        }
+      ]
+      name "solid(23)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation -7.02491 -5.51178 0.47
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 2 0.2 1
+          }
+        }
+      ]
+      name "solid(46)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation -2.74688 -5.5615 0.47
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 2 0.2 1
+          }
+        }
+      ]
+      name "solid(45)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation -1.99274 -4.69903 0.5
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 2 0.2 1
+          }
+        }
+      ]
+      name "solid(43)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation -1.22584 -4.71292 0.5
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 2 0.2 1
+          }
+        }
+      ]
+      name "solid(21)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation 1.92727 1.67377 0.5
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 2.4 0.2 1
+          }
+        }
+      ]
+      name "solid(49)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation 2.74158 0.972274 0.5
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 2.7 0.2 1
+          }
+        }
+      ]
+      name "solid(27)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation 5.23144 -2.55577 0.5
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 1.1 0.2 1
+          }
+        }
+      ]
+      name "solid(26)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation 6.1117 -3.22781 0.5
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 1.1 0.2 1
+          }
+        }
+      ]
+      name "solid(66)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation 6.97844 -2.3483 0.5
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 1.1 0.2 1
+          }
+        }
+      ]
+      name "solid(64)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation 5.22555 -1.46808 0.5
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 1.1 0.2 1
+          }
+        }
+      ]
+      name "solid(63)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation 2.29848 -5.07168 0.5
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 1.1 0.2 1
+          }
+        }
+      ]
+      name "solid(61)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation -0.412289 -5.03218 0.5
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 1.1 0.2 1
+          }
+        }
+      ]
+      name "solid(57)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation 0.32814 -4.42815 0.5
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 1.1 0.2 1
+          }
+        }
+      ]
+      name "solid(56)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation 1.14936 -5.02512 0.5
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 1.1 0.2 1
+          }
+        }
+      ]
+      name "solid(55)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation -1.15842 0.782204 0.5
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 2 0.2 1
+          }
+        }
+      ]
+      name "solid(54)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation 4.45022 0.738506 0.5
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 8 0.2 1
+          }
+        }
+      ]
+      name "solid(18)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation 3.5615 0.861904 0.5
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 4.42 0.2 1
+          }
+        }
+      ]
+      name "solid(19)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation -6.66324 -2.14596 0.47
+      rotation 0 0 1 4.692820414042842e-06
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 2.5 0.2 1
+          }
+        }
+      ]
+      name "solid(15)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation -5.78114 -0.146422 0.5
+      rotation 0 0 1 4.692820414042842e-06
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 2.5 0.2 1
+          }
+        }
+      ]
+      name "solid(31)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation 0.375473 3.93584 0.47
+      rotation 0 1 0 0
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 8 0.2 1
+          }
+        }
+      ]
+      name "solid(3)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation 5.09104 -5.61164 0.5
+      rotation 0 1 0 0
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 5.8 0.2 1
+          }
+        }
+      ]
+      name "solid(17)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation 1.66836 -3.80919 0.5
+      rotation 0 1 0 0
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 5.8 0.2 1
+          }
+        }
+      ]
+      name "solid(52)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation -5.09299 -3.79904 0.5
+      rotation 0 1 0 0
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 6 0.2 1
+          }
+        }
+      ]
+      name "solid(50)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation 0.461986 2.97769 0.5
+      rotation 0 1 0 0
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 6 0.2 1
+          }
+        }
+      ]
+      name "solid(32)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation -1.28362 -3.01136 0.47
+      rotation 0 1 0 0
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 11.5 0.2 1
+          }
+        }
+      ]
+      name "solid(33)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation -3.66545 -6.45779 0.5
+      rotation 0 1 0 0
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 7 0.2 1
+          }
+        }
+      ]
+      name "solid(29)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation 3.88043 -6.45362 0.5
+      rotation 0 1 0 0
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 8 0.2 1
+          }
+        }
+      ]
+      name "solid(35)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation -0.347008 -2.12729 0.5
+      rotation 0 1 0 0
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 8 0.2 1
+          }
+        }
+      ]
+      name "solid(14)"
+      boundingObject USE wall_03
+    }
+    Solid {
+      translation -3.91379 -1.1901 0.5
+      rotation 0 1 0 0
+      children [
+        DEF wall_03 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.666667 0 0
+            }
+          }
+          geometry Box {
+            size 8 0.2 1
+          }
+        }
+      ]
+      name "solid(28)"
+      boundingObject USE wall_03
+    }
+  ]
+}
